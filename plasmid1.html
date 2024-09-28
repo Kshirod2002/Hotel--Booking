@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel</title>
     <link rel="stylesheet" href="plasmid.css">
+    <script src="https://kit.fontawesome.com/757ca08649.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="hero-section">
@@ -32,39 +33,65 @@
         <div class="amenities">
             <h3>Amenities we have:</h3>
         <ul>
-            <li>High Speed Internet</li>
-            <li>Complementary Breakfast</li>
-            <li>Swimming pool</li>
-            <li>Gym</li>
-            <li>Cafeteria</li>
+            <li><i class="fa-solid fa-wifi"></i> High Speed Internet</li>
+            <li><i class="fa-solid fa-hotel"></i> Complementary Breakfast</li>
+            <li><i class="fa-solid fa-person-swimming"></i> Swimming pool</li>
+            <li><i class="fa-solid fa-dumbbell"></i> Gym</li>
+            <li><i class="fa-solid fa-mug-saucer"></i> Cafeteria</li>
         </ul>
         </div>
+    </section><br><br><br>
+
+    <h1 class="room-heading" >Room Types : </h1>
+    <section class="room-type-container">
+        <div class="room-image">
+           <img src="Roomimage.avif" alt="room-image">
+        </div>
+        <div class="room-list">
+         <h3>Single Occupancy Room</h3>
+         <p>A room assigned to one person. May have one or more beds.
+            The room size or area of single Rooms are generally between 37 m' to 45 m'.</p>
+
+         <h3>Family Room</h3>
+         <p>A parlour or living room connected with to one or more bedroom.(A room with one or more bedroom and a separate living space.)
+            The room size or area of Suite rooms are generally between 70 m' to 100 m'.
+         </p>
+         <h3>Duplex Room</h3>  
+        <p>The most expensive room provided by a hotel. Usually, only one suplex suite is available in one single hotel
+            property.Duplex suite always has one or more bedrooms and a living space with a strong emphasis on grand in room decoration, high quality amenities and supplies and tailor made services.
+         </p>  
+        </div> 
     </section>
     <br><br>
+    <div class="help-button">
+        <h4>Need Help?</h4>
+    </div>
     <section class="contact-section">
         <h1>Contact Me</h1><br>
         <div class="contact">
             <label for="name">Name :</label>
-            <input type="text" placeholder="name" id="Name" name="name"><br><br>
-            <label for="num">Number:</label>
-            <input type="number" placeholder="number" id="num" name="num"><br><br>
+            <input type="text" placeholder="name" id="Name" name="name" required><br><br>
+            <label for="email">Email Id</label>
+            <input type="email" placeholder="Email" id="Email" name="Email" required><br><br>
+            <label for="num">Ph.Number:</label>
+            <input type="number" placeholder="number" id="num" name="num" required><br><br>
+            <label for="booking-date">Date of Booking</label>
+            <input type="date" placeholder="Date of booking" id="date" name="date" required><br><br>
+            <label for="room-type">Select Room type</label>
+             <select name="room-type" id="room-type">
+                <option value=""Selected disabled>Select...</option>
+                <option value="Single room">Single Room</option>
+                <option value="family room">Family Room</option>
+                <option value="duplex room">Duplex Room</option>
+             </select><br><br>
             <label for="add">Address :</label>
-            <input type="text" placeholder="address" id="add" name="add"><br><br>
+            <input type="text" placeholder="address" id="add" name="add" required><br><br>
        
         <form action="/server">
             <button class="contact-button">Submit</button>
         </form>
         </div>
     </section>
-        <div class="map">
-            <h4>Please view in Map Location :</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239041.7777628005!2d85.87845899999999!3d20.586923199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19131920d42cdf%3A0x5c596abc84275825!2sChaudwar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1726731610647!5m2!1sen!2sin" width="250" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-   
-        
-
-        
-    
     
 </body>
 </html>
